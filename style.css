@@ -39,8 +39,8 @@ html::-webkit-scrollbar-thumb{background-color: #1a1a1a;; height: 8px;border-rad
     border-radius: 10px;
     box-shadow: 5px 10px #000000;
     overflow-x: scroll;
-   /* overflow-y:hidden;*/}
-
+    /* overflow-y: hidden; */
+    }
 .background2{
     animation-name: floor;
     animation-duration: 0.1s;
@@ -79,6 +79,14 @@ html::-webkit-scrollbar-thumb{background-color: #1a1a1a;; height: 8px;border-rad
     animation-name: jump2;
     animation-duration: 0.3s;}
 
+.died{
+    height: 83px !important;
+    width: 70px !important;
+    background-image: url("./sonic/died.png") !important;
+    background-size: cover !important;
+}   
+
+
 
 /*enemies*/
 .ring, .ring2, .ring3, .ring4, .ring5, .ring6, .ring7, .ring8, .ring9, .ring10,
@@ -100,10 +108,17 @@ html::-webkit-scrollbar-thumb{background-color: #1a1a1a;; height: 8px;border-rad
     }
 
 
-.eggman{
+.eggman,.eggman2{
     width: 120px;
     height: 140px;
     background-image: url("./assests/eggman2.gif");
+    background-size: cover;
+}
+
+.eggman2{
+    width: 120px;
+    height: 140px;
+    background-image: url("./assests/eggman.gif");
     background-size: cover;
 }
 
@@ -121,6 +136,34 @@ html::-webkit-scrollbar-thumb{background-color: #1a1a1a;; height: 8px;border-rad
     animation-duration: 1s !important;
     animation-iteration-count: initial !important;
 }    
+
+.keep{
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.keep2{
+    animation-name: run;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.win{width: 220px; opacity: 0;}
+.die{width: 220px; opacity: 0;}
+
+.mostrar{opacity: 1;}
+
+.eggLoses{
+    background-image: url("./assests/eggloses.gif");
+    width: 165px;
+    background-size: cover;
+}
+
+@keyframes run{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
 
 @keyframes running{
     25%{background-image: url("./sonic/03.png");
