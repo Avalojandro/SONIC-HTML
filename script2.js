@@ -69,8 +69,10 @@ let win = document.querySelector('.win');
 let morir = document.querySelector('.die');
 
 //Musica de fondo
-var song = new Audio('./audio/greenHill.mp3');
-    song.play();
+
+var song = new Audio('./audio/greenHill.mp3');    
+
+
 
 
 //Velocidad de movimiento
@@ -695,6 +697,9 @@ window.addEventListener('keydown', (e)=>{
             morir.classList.add("mostrar");
             alert("PRESS F5 TO PLAY AGAIN");
         }
+        if(x>0){
+            song.play();
+        }
         
         
         console.log(x);
@@ -923,3 +928,4 @@ window.addEventListener('keyup', (e)=>{
 if(die>1){
     morir.classList.add("mostrar");
 }
+
