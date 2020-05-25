@@ -71,7 +71,7 @@ let morir = document.querySelector('.die');
 //Musica de fondo
 
 var song = new Audio('./audio/greenHill.mp3');    
-
+song.play();
 
 
 
@@ -697,9 +697,7 @@ window.addEventListener('keydown', (e)=>{
             morir.classList.add("mostrar");
             alert("PRESS F5 TO PLAY AGAIN");
         }
-        if(x>0){
-            song.play();
-        }
+
         
         
         console.log(x);
