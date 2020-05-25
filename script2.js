@@ -70,7 +70,7 @@ let morir = document.querySelector('.die');
 
 //Musica de fondo
 var song = new Audio('./audio/greenHill.mp3');
-song.play();
+    song.play();
 
 
 //Velocidad de movimiento
