@@ -38,8 +38,8 @@ html::-webkit-scrollbar-thumb{background-color: #1a1a1a;; height: 8px;border-rad
     background-image: url("./assests/ground1.jpg");
     border-radius: 10px;
     box-shadow: 5px 10px #000000;
-    overflow-x: scroll;
-    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    overflow-y: hidden; 
     }
 .background2{
     animation-name: floor;
